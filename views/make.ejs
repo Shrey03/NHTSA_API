@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="/stylesheet/main.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js">
+    </script>
+    <script src="/js/main.js ">
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Welcome to NHTSA API</h1>
+        <p>Click on below category or enter VIN number</p>
+        <ul>
+            <li>
+                <a href="/">
+                    <button type="button" class="btn btn-primary btn-lg">Home</button>
+
+                </a>
+            </li>
+            <li>
+                <a href="/make">
+                    <button type="button" class="btn btn-primary btn-lg">ALL  Makers</button>
+
+                </a>
+            </li>
+            <li>
+                <a href="/manufacturer">
+                    <button type="button" class="btn btn-primary btn-lg">ALL Manufacturers</button>
+
+                </a>
+            </li>
+
+        </ul>
+
+
+
+    </div>
+    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+
+                <th class="th-sm">Name
+
+                </th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <% data["Results"].forEach(function(make){ %>
+                <tr>
+
+                    <td>
+                        <%= make["Make_Name"] %>
+                    </td>
+
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</body>
+
+</html>

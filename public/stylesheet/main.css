@@ -1,0 +1,45 @@
+.form-control {
+    width: 40% !important;
+    border-color: cadetblue !important;
+    margin-left: 30% !important;
+    margin-top: 10% !important;
+}
+
+.button {
+    margin-top: 1% !important;
+    margin-left: 45% !important;
+    width: 10% !important;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    background-color: rgb(55, 107, 150);
+}
+
+.indexImage {
+    height: 200px !important;
+    float: right;
+    margin-top: 10% !important;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.card {
+    width: 40% !important;
+    margin-left: 30% !important;
+    margin-top: 5% !important;
+    border-radius: 20px 20px 20px 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 2px;
+}
+
+body {
+    background-color: #F6DFE1;
+}
+
+.jumbotron {
+    background-color: #D998A3 !important;
+    text-align: center !important;
+}
