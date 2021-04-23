@@ -1,13 +1,3 @@
-// const fetch = require("node-fetch");
-// const express = require("express");
-
-// const baseUrl = "https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/";
-// const endUrl = "?format=json";
-
-
-// fetch(`${baseUrl}1N4AL21E09N541914${endUrl}`)
-//     .then((res) => res.json())
-//     .then((res) => console.log(res));
 var express = require("express");
 var app = express();
 var request = require("request");
@@ -57,9 +47,6 @@ app.get("/manufacturer", function(req, res) {
         }
     });
 });
-
-
-
-app.listen(3000, function() {
-    console.log("NHTSA API started");
+app.listen(process.env.PORT || 3000, function() {
+    console.log("NHTSA API is running......!!!", this.address().port, app.settings.env);
 });
