@@ -1,6 +1,6 @@
+<!-- AUTHOR - SHREY PATEL -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,6 @@
     <script src="/js/main.js ">
     </script>
 </head>
-
 <body>
     <div class="jumbotron">
         <h1>Welcome to NHTSA API</h1>
@@ -29,50 +28,36 @@
             <li>
                 <a href="/">
                     <button type="button" class="btn btn-primary btn-lg">Home</button>
-
                 </a>
             </li>
             <li>
                 <a href="/make">
                     <button type="button" class="btn btn-primary btn-lg">ALL  Makers</button>
-
                 </a>
             </li>
             <li>
                 <a href="/manufacturer">
                     <button type="button" class="btn btn-primary btn-lg">ALL Manufacturers</button>
-
                 </a>
             </li>
-
         </ul>
-
-
-
     </div>
     <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
         <thead>
             <tr>
-
                 <th class="th-sm">Name
-
                 </th>
-
             </tr>
         </thead>
-
         <tbody>
             <% data["Results"].forEach(function(make){ %>
                 <tr>
-
                     <td>
                         <%= make["Make_Name"] %>
                     </td>
-
                 </tr>
                 <% }) %>
         </tbody>
     </table>
 </body>
-
 </html>
